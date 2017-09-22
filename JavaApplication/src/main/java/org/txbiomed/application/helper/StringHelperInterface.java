@@ -7,16 +7,15 @@ package org.txbiomed.application.helper;
 
 /**
  *
- * @author lkacimi
+ * @author ubuntu
  */
-public class StringHelper {
-
-    /**
+public interface StringHelperInterface {
+     /**
      *
      * @param s
      * @return
      */
-    public String truncateAInFirst2Positions(String s){
+    public static String truncateAInFirst2Positions(String s){
         if(s.length()<=2){
             return s.replaceAll("A", "");
         }
@@ -32,7 +31,7 @@ public class StringHelper {
      * @param str
      * @return true if first and last characters of string are the same, false otherwise
      */
-    public boolean areFirstAndLastCharactersTheSame(String str){
+    public static boolean areFirstAndLastCharactersTheSame(String str){
         if(str.length()<=1){
             return false;
         }
