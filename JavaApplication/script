@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+if [ -e pom.xml ]
+then
+	echo yes
+fi
