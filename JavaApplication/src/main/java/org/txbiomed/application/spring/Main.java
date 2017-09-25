@@ -19,6 +19,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 import org.txbiomed.application.helper.StringHelperInterface;
 import org.txbiomed.application.entities.*;
+
 /**
  *
  * @author lkacimi
