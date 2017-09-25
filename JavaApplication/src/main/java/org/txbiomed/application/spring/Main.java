@@ -12,10 +12,13 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.txbiomed.application.helper.StringHelperInterface;
-
+import org.txbiomed.application.entities.*;
 /**
  *
  * @author lkacimi
@@ -33,7 +36,6 @@ public class Main {
         System.out.println(StringHelperInterface.areFirstAndLastCharactersTheSame("ABA"));
         
         System.out.println(isPrime(2));
-        //System.out.println(isPrimeBis(8));
         
         //find double of first even number > 3 among a list
         List<Integer> values = Arrays.asList(1,2,3,5,4,6,7,8,9);
@@ -64,6 +66,20 @@ public class Main {
        printSnap(new Camera(Color::darker, Color::brighter)); // decorator design pattern using lambdas
        
        Mailer.send(mailer -> mailer.from().to().subject());
+       
+       
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("PersistenceUnit");
+        EntityManager em = emf.createEntityManager();
+        
+        Animal a = new Animal();
+        a.setName("Joy");
+        a.setSex(Sex.MALE);
+        em.getTransaction().begin();
+        em.persist(a);
+        em.flush();
+        em.getTransaction().commit();
+        em.close();
+       
         
     }
     
