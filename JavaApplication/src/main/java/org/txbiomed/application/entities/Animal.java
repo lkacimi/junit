@@ -13,7 +13,7 @@ import javax.persistence.Id;
 
 /**
  *
- * @author ubuntu
+ * @author lkacimi
  */
 @Entity
 public class Animal implements Serializable {

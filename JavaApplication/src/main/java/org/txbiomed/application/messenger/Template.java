@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.txbiomed.application.entities;
+package org.txbiomed.application.messenger;
 
 /**
  *
  * @author lkacimi
  */
-public enum Sex {
-    MALE,FEMALE,UNKNOWN
+public class Template {
+    
 }

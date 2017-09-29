@@ -13,7 +13,7 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 
 /**
  *
- * @author ubuntu
+ * @author lkacimi
  */
 public class KafkaConsumerImpl {
     public static void consume(){

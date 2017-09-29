@@ -20,7 +20,7 @@ import org.txbiomed.application.helper.StringHelper;
 
 /**
  *
- * @author ubuntu
+ * @author lkacimi
  */
 @RunWith(MockitoJUnitRunner.class)
 public class MockitoJUnitTest {
@@ -61,5 +61,9 @@ public class MockitoJUnitTest {
         Mockito.verify(helper, Mockito.times(2)).areFirstAndLastCharactersTheSame(Mockito.anyString());
         assertEquals(helper.truncateAInFirst2Positions("HELLO"), "BB");
         Mockito.verify(helper, Mockito.atLeast(1)).truncateAInFirst2Positions(Mockito.anyString());
+        
+       
     }
+    
+   
 }

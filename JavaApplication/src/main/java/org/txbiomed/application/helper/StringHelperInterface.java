@@ -7,7 +7,7 @@ package org.txbiomed.application.helper;
 
 /**
  *
- * @author ubuntu
+ * @author lkacimi
  */
 public interface StringHelperInterface {
      /**

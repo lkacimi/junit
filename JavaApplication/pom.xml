@@ -55,6 +55,14 @@
             <artifactId>mockito-core</artifactId>
             <version>2.10.0</version>
         </dependency>
+        
+        <dependency>
+            <groupId>pl.pragmatists</groupId>
+            <artifactId>JUnitParams</artifactId>
+            <version>1.0.4</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

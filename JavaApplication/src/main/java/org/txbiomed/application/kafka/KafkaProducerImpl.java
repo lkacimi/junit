@@ -11,7 +11,7 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 
 /**
  *
- * @author ubuntu
+ * @author lkacimi
  */
 public class KafkaProducerImpl {
     public static void produce(){

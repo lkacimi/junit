@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.txbiomed.application.entities;
+package org.txbiomed.application.domain;
 
 /**
  *
  * @author lkacimi
  */
-public enum Sex {
-    MALE,FEMALE,UNKNOWN
+public interface Car {
+    boolean needsFuel();
+    double getEngineTemperature();
+    void driveTo(String destination);
 }

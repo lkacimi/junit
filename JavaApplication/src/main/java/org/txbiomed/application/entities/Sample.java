@@ -17,7 +17,7 @@ import javax.persistence.ManyToOne;
 
 /**
  *
- * @author ubuntu
+ * @author lkacimi
  */
 @Entity
 public class Sample implements Serializable {
