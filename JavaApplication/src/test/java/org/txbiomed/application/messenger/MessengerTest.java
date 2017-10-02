@@ -11,14 +11,19 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Rule;
 import org.mockito.Mockito;
 import org.txbiomed.application.domain.Client;
+import org.txbiomed.application.service.TimeTestListener;
 
 /**
  *
  * @author ubuntu
  */
 public class MessengerTest {
+    
+    @Rule
+    public TimeTestListener timeTestListener = new TimeTestListener();
     
     public MessengerTest() {
     }
