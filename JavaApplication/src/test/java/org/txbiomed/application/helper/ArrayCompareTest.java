@@ -58,7 +58,7 @@ public class ArrayCompareTest {
        Arrays.sort(numbers);    
     }
     
-    @Test(timeout = 100) // test performance using timeout, 10 in ms
+    @Test(timeout = 1000) // test performance using timeout, 10 in ms
     public void testSortPerformance(){
         int[] a ={12,23,4};
         for(int i=0; i<=1000000; i++){

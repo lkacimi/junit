@@ -62,6 +62,12 @@
             <version>1.0.4</version>
             <scope>test</scope>
         </dependency>
+        
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>2.7.4</version>
+        </dependency>
 
     </dependencies>
     <properties>
@@ -109,14 +115,10 @@
                         <configuration>
                             <dataFile>target/jacoco.exec</dataFile>
                             <outputDirectory>target/jacoco-ut</outputDirectory>
-                            <rules>
-                                <rule implementation="org.jacoco.maven.RuleConfiguration">
-                                    <element>BUNDLE</element>
-                                </rule>
-                            </rules>
                         </configuration>
                         
                     </execution>
+                    
                     
                 </executions>
                 <configuration>
